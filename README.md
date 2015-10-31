@@ -3,11 +3,6 @@
 
 A bash script to re-sign iOS applications with Ad-Hoc or Enterprise distribution profile
 
-## App to ipa
-```bash
-./app2ipa source_file_name.app source_file_name
-```
-
 ## Usage
  
 ```bash
@@ -17,8 +12,12 @@ A bash script to re-sign iOS applications with Ad-Hoc or Enterprise distribution
 ##Example for Feitian enterprise account
 
 ```bash
-./floatsign.sh source_file_name.ipa "iPhone Distribution: Feitian Technologies Co., Ltd." -p "*/path/FT_IN_HOUSE.mobileprovision" -b "com.ftsafe.xx" output_filename.ipa
+./floatsign.sh source_file_name.ipa "iPhone Distribution: Feitian Technologies Co., Ltd." -p "*/path/FT_IN_HOUSE.mobileprovision" -b "com.ftsafe.**" output_filename.ipa
 ```
+```bash
+./floatsign.sh source_file_name.app "iPhone Distribution: Feitian Technologies Co., Ltd." -p "*/path/FT_IN_HOUSE.mobileprovision" -b "com.ftsafe.**" output_filename.ipa
+```
+
 ## History
 
 `See floatsign.sh for original author and contributor information`
